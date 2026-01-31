@@ -35,7 +35,7 @@ public class Account {
     }
 
     public void deposit(Long amount) {
-        if (amount < 0) throw new IllegalArgumentException("입금액은 0보다 커야합니다.");
+        if (amount <= 0) throw new IllegalArgumentException("입금액은 0보다 커야합니다.");
         this.balance += amount;
     }
 
