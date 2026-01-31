@@ -11,7 +11,7 @@ import java.util.Random;
 @Service
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
-public class AccountService {
+public class AccountUnitService {
     private final AccountRepository accountRepository;
 
     @Transactional
